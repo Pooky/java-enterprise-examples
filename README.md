@@ -6,11 +6,11 @@ This request could be file, image, folder or something else. The container need 
 
 If we wan't to generate content dynamicly on server, we have to use some language which will do it. We have several options:
 
-Server 		| Language
---------------------------------------------
-Apache		| PHP, Perl, Python, Ruby, Rails
-MS Server	| Asp.net
-Tomcat 7 	| Java (Servlet, JSP)
+| Server 		| Language
+| ------------ 	| --------------------------------
+| Apache		| PHP, Perl, Python, Ruby, Rails
+| MS Server		| Asp.net
+| Tomcat 7 		| Java (Servlet, JSP)
 
 In this case, Tomcat 7 is not really WebServer (or HTTP server) but Servlet and JSP Container which is fully complaint with Java Servlet specification.
 There is many versions, which have differend features, each version of Tomcat supports differend one. 
