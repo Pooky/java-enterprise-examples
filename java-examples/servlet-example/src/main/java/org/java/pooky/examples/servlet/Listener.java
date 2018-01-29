@@ -1,4 +1,4 @@
-package my.app;
+package org.java.pooky.examples.servlet;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

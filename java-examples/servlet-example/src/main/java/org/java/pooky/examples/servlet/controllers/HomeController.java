@@ -1,4 +1,4 @@
-package my.app.controllers;
+package org.java.pooky.examples.servlet.controllers;
 
 import java.io.IOException;
 

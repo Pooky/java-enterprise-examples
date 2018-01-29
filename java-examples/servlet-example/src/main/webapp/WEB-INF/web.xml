@@ -6,7 +6,7 @@
   <display-name>Serverlet what does things!</display-name>
   <servlet>
     <servlet-name>Main</servlet-name>
-    <servlet-class>my.app.MainServlet</servlet-class>
+    <servlet-class>org.java.pooky.examples.servlet.MainServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Main</servlet-name>
@@ -22,7 +22,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>dispatcher</servlet-name>
-    <servlet-class>my.app.Dispatcher</servlet-class>
+    <servlet-class>org.java.pooky.examples.servlet.Dispatcher</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>dispatcher</servlet-name>

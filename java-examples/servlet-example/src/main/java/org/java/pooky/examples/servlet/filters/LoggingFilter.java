@@ -1,4 +1,4 @@
-package my.app.filters;
+package org.java.pooky.examples.servlet.filters;
 
 import java.io.IOException;
 
