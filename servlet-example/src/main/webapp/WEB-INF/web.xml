@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Web app definition -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<description>
+      ### Java Examples Servlets ###
+      URL: https://github.com/Pooky/java-examples
+    </description>
+
+	<display-name>Servlet what does things!</display-name>
+
+	<!-- Mapping main servlet to /main pattern -->
+	<servlet>
+		<servlet-name>Main</servlet-name>
+		<servlet-class>org.examples.servlets.MainServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Main</servlet-name>
+		<url-pattern>/main</url-pattern>
+	</servlet-mapping>
+
+	<!-- Mapping home.jsp page to /home pattern -->
+	<servlet>
+		<servlet-name>home</servlet-name>
+		<jsp-file>/jsp/home.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>home</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+
+	<!-- Servlet dispatcher if any previous pattern is not machted -->
+	<servlet>
+		<servlet-name>dispatcher</servlet-name>
+		<servlet-class>org.examples.servlets.Dispatcher</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>dispatcher</servlet-name>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+
+</web-app>

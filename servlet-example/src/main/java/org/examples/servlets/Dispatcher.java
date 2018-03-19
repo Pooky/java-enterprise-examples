@@ -1,4 +1,4 @@
-package org.java.pooky.examples.servlet;
+package org.examples.servlets;
 
 import java.io.IOException;
 
@@ -7,6 +7,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Dispatcher which will process every request, which is not mapped to anyone
+ * Basically this is default controller - 404 Page not FOUND!
+ * @see /src/main/webapp/WEB-INF/web.xml
+ */
 public class Dispatcher extends HttpServlet {
 
 	@Override

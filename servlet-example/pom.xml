@@ -4,11 +4,19 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.java.pooky</groupId>
 	<artifactId>ServletExample</artifactId>
+	
 	<version>1.0</version>
+	
+	<!-- Packing as WEB Application e.q. WAR file -->
 	<packaging>war</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
 	<build>
 		<plugins>
+			<!-- Maven compiler -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.6.1</version>
@@ -17,6 +25,8 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			
+			<!-- Tomcat deploy plugin -->
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
@@ -24,7 +34,7 @@
 				<configuration>
 					<url>http://localhost:8080/manager/text</url>
 					<server>TomcatServer</server>
-					<path>/${artifactId}-${version}</path>
+					<path>/${project.artifactId}-${project.version}</path>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -39,7 +49,6 @@
 			<version>4.0.0</version>
 			<scope>provided</scope>
 		</dependency>
-
 
 	</dependencies>
 
