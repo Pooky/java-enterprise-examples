@@ -9,7 +9,7 @@ How to install:
 
 * Download Tomcat 8 - https://tomcat.apache.org/download-80.cgi#8.5.29
 * Unzip to folder and run by /bin/catalina.sh run
-* Compile this project from folder by command: "mvn install" 
+* Compile this project from folder by command: "mvn package" or "mvn install" 
 
  - (If you missing maven, install and setup maven for command line) https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
