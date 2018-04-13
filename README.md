@@ -23,4 +23,9 @@ For more check [Wiki](https://github.com/Pooky/java-examples/wiki/)!
 * // TODO: Maven command install and clean
 * // TODO: More information about examples and command for build each example
 * // TODO: Examples for Wildfly or standalone
+<<<<<<< HEAD
 * // TODO: Wiki code which relate to example
+=======
+* // TODO: Wiki code which relate to example
+
+>>>>>>> 3653647351a7930b243ac2a8983dd96f32fccfe5
