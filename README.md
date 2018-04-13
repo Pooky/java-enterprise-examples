@@ -16,11 +16,12 @@ Availible examples:
 Each folder contain README.md where are instruction how to compile and run specific example.
 For building project you need to use Maven.
 
-// TODO: Maven setup
-// TODO: Maven command install and clean
-// TODO: More information about examples and command for build each example
-// TODO: Examples for Wildfly or standalone
-// TODO: Wiki code which relate to example
-
-
 For more check [Wiki](https://github.com/Pooky/java-examples/wiki/)!
+
+
+* // TODO: Maven setup
+* // TODO: Maven command install and clean
+* // TODO: More information about examples and command for build each example
+* // TODO: Examples for Wildfly or standalone
+* // TODO: Wiki code which relate to example
+
