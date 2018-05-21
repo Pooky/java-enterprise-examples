@@ -2,18 +2,19 @@
 
 > The purpouse of this example is to show how you can use dependency injection design pattern.
 
-Dependency injection or DI simply mean  providing dependencies (objects, references) to objects externally. The object doesn't hold or create new objects (dependencies) by him self instead he need to be provided with object references during construction or by setters or by container.
+Dependency injection or DI simply mean  providing dependencies (objects, references) to java objects externally. The object does not have to hold or create new objects (dependencies) by him self, instead he need to be provided with object references during construction or externally.
 
-Main advantage of this approach is possibility to replace dependencies without changing the object code or structure. 
+Main advantage of this approach is possibility to replace dependencies without changing the object code and structure. 
 
-You can use dependency injection to provide object with mock service and then in production replace it with real or testing service by your choice. You can also provide object with database connection or some file resource. If the object would hold the reference inside or create it by him self then you would need to comment or change code inside to replace this dependency. That's the main reason to use some kind of dependency injection
+You can use dependency injection to provide object with mock service and then in production replace it with real or testing service by your choice. You can also provide object with database connection or some file resource. If the object would hold the reference inside or create it by him self then you would need to comment or change code inside to replace this dependency. That's the main reason to use some kind of dependency injection pattern.
 
-Let's see some example. 
+Now, let's see some example. 
 
-First example without dependency injection. 
+**Example without dependency injection.**
 
-In code bellow we have class, which has construction and method run. During the construction the class will create new instance of the class MockObject. This is dependency for the class which is hardcoded into the code. We can't tell the class to use differend object without changing the code bellow. 
+In code bellow we have class which has constructor, single method ```run``` and private variable ```myObject```. During the construction the class will create new instance of the class MockObject and save it reference to variable ```myObject```. 
 
+MockObject is dependency for the class in this case. We can see that dependency initialization is hardcoded into the code. We can't provide the class with differend dependency for ```MockObject``` without changing the code bellow. 
 
 
 ```
@@ -38,7 +39,9 @@ public class RunableApplication {
 
 }
 ```
- This can be fixed by many ways, we can introduce parameter in constructon, which will allow to provide reference to this class. See code bellow.
+ This can be fixed by many ways. We can introduce parameter in constructor which will allow to provide reference to this class during creation of new instance. See code bellow. 
+
+ **Example with dependency injection provided by constructor**
 
 ```
 public class RunableApplication {
@@ -64,10 +67,12 @@ public class RunableApplication {
 
 This case can be very handy, when we have only few dependencies but after some time we can have five or ten dependencies, which we need to provide. For this we can use setters, to setup correct dependencies or some library, which will help us to do it. For this case there is Weld library which allow to specify what should be "injected" into objects. See code bellow
 
+ **Example with dependency injection provided by java container**
+
 ```
 public class RunableApplication {
 
-    @Inject
+	@Inject
 	private MockObject myObject;
 
 	public void run() {
