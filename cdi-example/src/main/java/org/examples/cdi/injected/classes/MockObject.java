@@ -7,7 +7,9 @@ package org.examples.cdi.injected.classes;
 public class MockObject implements ObjectInterface {
 
 	public String getMessage() {
+		
 		return "Hello from " + this.getClass().getSimpleName();
 	}
+	
 	
 }
