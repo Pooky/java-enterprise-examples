@@ -8,9 +8,16 @@ Main advantage of this approach is possibility to replace dependencies without c
 
 You can use dependency injection to provide object with mock service and then in production replace it with real or testing service by your choice. You can also provide object with database connection or some file resource. If the object would hold the reference inside or create it by him self then you would need to comment or change code inside to replace this dependency. That's the main reason to use some kind of dependency injection pattern.
 
-Now, let's see some example. 
+Now, let's see some examples. *All examples can be found in repository*
 
-**Example without dependency injection.**
+## How to run examples
+
+* Copy this repository to your local folder
+* Import into Eclipse (or any other IDE) as maven project
+* Run main method in class "org.examples.cdi.RunableApplication"
+
+
+## Example without dependency injection.
 
 In code bellow we have class which has constructor, single method ```run``` and private variable ```myObject```. During the construction the class will create new instance of the class MockObject and save it reference to variable ```myObject```. 
 
@@ -88,7 +95,7 @@ In this case we don't need any constructor. The intialization of the instance is
 
 ## Downsides of dependency injection done by container.**
 
-When we talking about dependency injection delegated to container we should also talk about some disadvantages which this approach cover. At first it's overhead during configuration and startup. Container needs to know where are classes located and he need to decide what will be injected and where. That's pretty heavy for configuration and many of libraries use differend way how to configure their behavior, many times it very confusing for begginers.
+When we talking about dependency injection delegated to container we should also talk about some disadvantages which this approach cover. At first it's overhead during configuration and startup. Container needs to know where are classes located and he need to decide what will be injected and where. That's pretty heavy for configuration and many of libraries use differend way how to configure their behavior, many times it very confusing to understand the rules exactly.
 
 Secondly, when you use container to inject your classes all classes that you use need to be injectable. In other words you can not use injection of one class and another create manually, that will lead to null pointers and errors. All classes need to be managed by container.
 
