@@ -17,7 +17,7 @@ In code bellow we have class which has constructor, single method ```run``` and 
 MockObject is dependency for the class in this case. We can see that dependency initialization is hardcoded into the code. We can't provide the class with differend dependency for ```MockObject``` without changing the code bellow. 
 
 
-```
+```java
 public class RunableApplication {
 
 	private MockObject myObject;
@@ -43,7 +43,7 @@ public class RunableApplication {
 
  **Example with dependency injection provided by constructor**
 
-```
+```java
 public class RunableApplication {
 
 	private MockObject myObject;
@@ -65,11 +65,11 @@ public class RunableApplication {
 }
 ```
 
-This case can be very handy, when we have only few dependencies but after some time we can have five or ten dependencies, which we need to provide. For this we can use setters, to setup correct dependencies or some library, which will help us to do it. For this case there is Weld library which allow to specify what should be "injected" into objects. See code bellow
+This method can be very handy when we have only few dependencies but after some time we can have five or ten dependencies which we need to provide. For this we can use setters to setup correct dependencies or some library which will help us to do it. For this case there is Weld library which helps to specify what should be "injected" into objects. See code bellow
 
  **Example with dependency injection provided by java container**
 
-```
+```java
 public class RunableApplication {
 
 	@Inject
@@ -86,9 +86,9 @@ public class RunableApplication {
 ```
 In this case we don't need any constructor. The intialization of the instance is fully automated by container. You can also specify which class you want to inject by annotation or other settings which will be passed to container - usually is used beans.xml file.
 
-**Downsides of dependency injection done by container.**
+## Downsides of dependency injection done by container.**
 
-When we talking about dependency injection delegated to container we should also talk about some disadvantages which this structure hold. At first it's overhead during configuration and startup. Container needs to know where are classes located and he need to decide what will be injected and where. That's pretty heavy for configuration and many of libraries use differend way how to configure their behavior. 
+When we talking about dependency injection delegated to container we should also talk about some disadvantages which this approach cover. At first it's overhead during configuration and startup. Container needs to know where are classes located and he need to decide what will be injected and where. That's pretty heavy for configuration and many of libraries use differend way how to configure their behavior, many times it very confusing for begginers.
 
 Secondly, when you use container to inject your classes all classes that you use need to be injectable. In other words you can not use injection of one class and another create manually, that will lead to null pointers and errors. All classes need to be managed by container.
 
