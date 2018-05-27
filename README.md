@@ -5,6 +5,7 @@ Main aim of this repository is to keep simple java examples for differend techno
 Availible examples:
 
  * Context Dependency Injection - [CDI Example](https://github.com/Pooky/java-examples/tree/master/cdi-example)
+ * Spring Dependency Injection - [Spring Example](https://github.com/Pooky/dependency-injection-spring)
  * Encryption Examples - RSA, Diffie Hellman Key Exchange
  * Jasper Report Example
  * Quartz Scheduler Example
