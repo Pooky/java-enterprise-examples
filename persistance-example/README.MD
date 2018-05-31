@@ -14,7 +14,7 @@ To make connection from java to db you mainly need this three things:
 
 This config is located here: 
 
-* src/main/resources/META-INF/persistence.xml 
+* [src/main/resources/META-INF/persistence.xml](https://github.com/Pooky/java-enterprise-examples/blob/master/persistance-example/src/main/resources/META-INF/persistence.xml)
 
 This file is configuration file for db connection. All settings and database connection properties are set there. It's very important to have this file in right location otherwise will not be found.
 
