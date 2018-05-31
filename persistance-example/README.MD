@@ -2,7 +2,7 @@
 
 > The purpouse of this example is to show you how to user persistance layer to save data to database.
 
-Persistance layer in Java is very popular. Java is object oriented and this method allow you to persist (save) data to db and again to retrive it back.
+Persistance layer in Java is very popular. Java is object oriented and this method allow you to persist (save) data to db and again to retrive it back using objects and object related language - something like LINQ in .NET world. 
 
 To make connection from java to db you mainly need this three things:
 
