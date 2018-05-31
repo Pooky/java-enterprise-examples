@@ -13,7 +13,7 @@ Availible examples:
  * RestEasy Example
  * Servlet Example
  * Shiro Security Example
- * Vaadin Exmaple - GUI framework for java
+ * Vaadin Example
 
 Each folder contain README.md where are instruction how to compile and run specific example.
 For building project you need to use Maven.
