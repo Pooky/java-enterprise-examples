@@ -20,7 +20,7 @@ This file is configuration file for db connection. All settings and database con
 
 ## Database driver
 
-In this example we use H2 emmbed database and we need correct driver for that. We define it as maven dependency.
+In this example we use HSQLDB memory emmbed database and we need correct driver for that. We define it as maven dependency.
 ```java
 <dependency>
 	<groupId>org.hsqldb</groupId>
