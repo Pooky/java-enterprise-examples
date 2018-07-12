@@ -11,6 +11,7 @@ public class MySimpleTest {
 
 		ObjectMapper objectMapper = new ObjectMapper();
 
+
 		String carJson =
 		    "{ \"brand\" : \"Mercedes\", \"doors\" : 5 }";
 
