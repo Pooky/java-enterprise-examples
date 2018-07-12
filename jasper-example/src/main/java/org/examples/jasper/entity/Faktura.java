@@ -1,6 +1,4 @@
-package org.examples.jasper;
-
-import org.examples.jasper.entity.Address;
+package org.examples.jasper.entity;
 
 public class Faktura {
 

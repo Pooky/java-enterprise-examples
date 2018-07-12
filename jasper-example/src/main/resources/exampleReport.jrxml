@@ -12,7 +12,7 @@
 
    <parameter name = "ReportTitle" class = "java.lang.String"/>
    <parameter name = "Author" class = "java.lang.String"/>
-   <parameter name = "Faktura" class = "org.examples.jasper.Faktura"/>
+   <parameter name = "Faktura" class = "org.examples.jasper.entity.Faktura"/>
 
    <queryString>
       <![CDATA[]]>
