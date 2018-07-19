@@ -1,146 +1,99 @@
-<?xml version = "1.0" encoding = "UTF-8"?>
-<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
-   "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
-
-<jasperReport xmlns = "http://jasperreports.sourceforge.net/jasperreports"
-   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation = "http://jasperreports.sourceforge.net/jasperreports
-   http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
-   name = "jasper_report_template" pageWidth = "595"
-   pageHeight = "842" columnWidth = "555" leftMargin = "20" rightMargin = "20"
-   topMargin = "20" bottomMargin = "20">
-
-   <parameter name = "ReportTitle" class = "java.lang.String"/>
-   <parameter name = "Author" class = "java.lang.String"/>
-   <parameter name = "Faktura" class = "org.examples.jasper.Faktura"/>
-
-   <queryString>
-      <![CDATA[]]>
-   </queryString>
-   
-   <field name = "country" class = "java.lang.String">
-      <fieldDescription><![CDATA[country]]></fieldDescription>
-   </field>
-   
-   <field name = "name" class = "java.lang.String">
-      <fieldDescription><![CDATA[name]]></fieldDescription>
-   </field>
-   
-   
-   <title>
-      <band height = "70">
-         
-         <line>
-            <reportElement x = "0" y = "0" width = "515" height = "1"/>
-         </line>
-         
-         <textField isBlankWhenNull = "true" bookmarkLevel = "1">
-            <reportElement x = "0" y = "10" width = "515" height = "30"/>
-           
-            <textElement textAlignment = "Center">
-               <font size = "22"/>
-            </textElement>
-            
-            <textFieldExpression class = "java.lang.String">
-               <![CDATA[$P{Faktura}.getDodavatelAdresa().getFirstName()]]>
-            </textFieldExpression>
-				
-            <anchorNameExpression>
-               <![CDATA["Title"]]>
-            </anchorNameExpression>
-         </textField>
-         
-         <textField isBlankWhenNull = "true">
-            <reportElement  x = "0" y = "40" width = "515" height = "20"/>
-            
-            <textElement textAlignment = "Center">
-               <font size = "10"/>
-            </textElement>
-            
-            <textFieldExpression class = "java.lang.String">
-               <![CDATA[$P{Author}]]>
-            </textFieldExpression>
-         </textField>
-      
-      </band>
-   </title>
-   
-   <columnHeader>
-      <band height = "23">
-         
-         <staticText>
-            <reportElement mode = "Opaque" x = "0" y = "3" 
-               width = "535" height = "15" backcolor = "#70A9A9" />
-            
-            <box>
-               <bottomPen lineWidth = "1.0" lineColor = "#CCCCCC" />
-            </box>
-
-            <textElement />
-            <text><![CDATA[]]> </text>
-         </staticText>
-         
-         <staticText>
-            <reportElement x = "414" y = "3" width = "121" height = "15" />
-            
-            <textElement textAlignment = "Center" verticalAlignment = "Middle">
-               <font isBold = "true" />
-            </textElement>
-            
-            <text><![CDATA[Country]]></text>
-         </staticText>
-         
-         <staticText>
-            <reportElement x = "0" y = "3" width = "136" height = "15" />
-            
-            <textElement textAlignment = "Center" verticalAlignment = "Middle">
-               <font isBold = "true" />
-            </textElement>
-            
-            <text><![CDATA[Name]]></text>
-         </staticText>
-      
-      </band>
-   </columnHeader>
-   
-   <detail>
-      <band height = "16">
-		
-         <staticText>
-            <reportElement mode = "Opaque" x = "0" y = "0" 
-               width = "535" height = "14" backcolor = "#E5ECF9" />
-            
-            <box>
-               <bottomPen lineWidth = "0.25" lineColor = "#CCCCCC" />
-            </box>
-            
-            <textElement />
-            <text><![CDATA[]]> </text>
-         </staticText>
-         
-         <textField>
-            <reportElement x = "414" y = "0" width = "121" height = "15" />
-            
-            <textElement textAlignment = "Center" verticalAlignment = "Middle">
-               <font size = "9" />
-            </textElement>
-            
-            <textFieldExpression class = "java.lang.String">
-               <![CDATA[$F{country}]]>
-            </textFieldExpression>
-         </textField>
-         
-         <textField>
-            <reportElement x = "0" y = "0" width = "136" height = "15" />
-            <textElement textAlignment = "Center" verticalAlignment = "Middle" />
-               
-            <textFieldExpression class = "java.lang.String">
-               <![CDATA[$F{name}]]>
-            </textFieldExpression>
-         </textField>
-
-      
-      </band>
-   </detail>
-	
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jasper_report_template" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="72fe5590-25cb-4b06-8bd3-18929227ed6c">
+	<style name="BaseStyle" isDefault="true" markup="styled" fontName="DejaVu Sans" fontSize="11"/>
+	<parameter name="ReportTitle" class="java.lang.String"/>
+	<parameter name="Author" class="java.lang.String"/>
+	<parameter name="Faktura" class="org.examples.jasper.Faktura"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="country" class="java.lang.String">
+		<fieldDescription><![CDATA[country]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<title>
+		<band height="73" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="515" height="1" uuid="978fa5b5-5b16-4686-900d-460cfb5b8cc6"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="10" width="100" height="20" uuid="e41b8d8c-4d1e-4867-8b76-410a9f039e5f"/>
+				<text><![CDATA[Celkova cena:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true" bookmarkLevel="1">
+				<reportElement x="100" y="10" width="136" height="20" uuid="12810150-f44c-4e69-9f82-aa82599d9c76"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$P{Faktura}.getCelkovaCena()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="20" uuid="f4a29871-b682-4443-a8c9-0a31db102acb"/>
+				<text><![CDATA[Variabilni symbol]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true" bookmarkLevel="1">
+				<reportElement x="100" y="30" width="136" height="20" uuid="86c5218d-3f16-4cd9-80ff-4a382051f43b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Faktura}.getVs()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="260" y="10" width="100" height="20" uuid="3bbc8335-c57e-4c3e-a7e6-5f6b520e1076"/>
+				<text><![CDATA[Datum vystaveni]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="380" y="10" width="136" height="20" uuid="099f8b48-e81d-422c-a8ef-4a07048f7cde"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Faktura}.getDatumVystaveni()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="260" y="30" width="100" height="20" uuid="a8799301-496e-46da-a39f-2d3fe21ed9a5"/>
+				<text><![CDATA[Datum splatnosti]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="380" y="30" width="136" height="20" uuid="ff1eb170-34c3-4b64-ae34-95b15f194894"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Faktura}.getDatumSplatnosti()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="414" y="3" width="121" height="15" uuid="6278c6a8-48a5-47f8-b6f1-7de227828dd8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Země původu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="4" width="136" height="15" uuid="519d9cc9-6d10-4be4-bcdf-51f11dcf726e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Položky:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="535" height="14" backcolor="#E5ECF9" uuid="66296001-aa23-4695-a603-b22aced0e73b"/>
+				<box>
+					<bottomPen lineWidth="0.25" lineColor="#CCCCCC"/>
+				</box>
+				<text><![CDATA[ ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="414" y="0" width="121" height="15" uuid="3d0f92f2-002a-4679-8494-fcabe19446d2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{country}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="136" height="15" uuid="93bd7c7c-2f78-4c5c-8d6b-ed09f05834f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
 </jasperReport>
