@@ -4,16 +4,16 @@ Main aim of this repository is to keep simple java examples for differend enterp
 
 Availible examples:
 
- * Context Dependency Injection - [CDI Example](./cdi-example)
- * Spring Dependency Injection - [Spring Example](https://github.com/Pooky/dependency-injection-spring)
- * Database persistance layer - [Persistance Example](./persistance-example)
- * Encryption Examples - RSA, Diffie Hellman Key Exchange
- * Jasper Report Example - [Jasper Example](./jasper-example)
- * Quartz Scheduler Example
- * RestEasy Example
- * Servlet Example
- * Shiro Security Example
- * Vaadin Example
+ * Context Dependency Injection - [CDI example](./cdi-example)
+ * Spring Dependency Injection - [Spring example](https://github.com/Pooky/dependency-injection-spring)
+ * Database persistance layer - [Persistance example](./persistance-example)
+ * RSA, Diffie Hellman Key Exchange - [Encription examples](./encryption-examples)
+ * Reports and PDF - [Jasper example](./jasper-example)
+ * Jobs and Cron - [Quartz Scheduler example](./quartz-example) 
+ * REST Web Services - [RestEasy example](./resteasy-example) 
+ * Java pages - [Servlets example](./servlet-example)
+ * Security of application - [Shiro example](./shiro-example)
+ * Web application pure in Java - [Vaadin example](./vaadin-example)
 
 Each folder contain README.md where are instruction how to compile and run specific example.
 For building project you need to use Maven.
