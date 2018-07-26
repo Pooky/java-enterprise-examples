@@ -8,7 +8,7 @@ Availible examples:
  * Spring Dependency Injection - [Spring Example](https://github.com/Pooky/dependency-injection-spring)
  * Database persistance layer - [Persistance Example](./persistance-example)
  * Encryption Examples - RSA, Diffie Hellman Key Exchange
- * Jasper Report Example  [Jasper Example](./jasper-example)
+ * Jasper Report Example - [Jasper Example](./jasper-example)
  * Quartz Scheduler Example
  * RestEasy Example
  * Servlet Example
