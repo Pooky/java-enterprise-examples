@@ -25,7 +25,7 @@ In this example we use HSQLDB memory emmbed database and we need correct driver 
 <dependency>
 	<groupId>org.hsqldb</groupId>
 	<artifactId>hsqldb</artifactId>
-	<version>2.3.2</version>
+	<version>2.4.1</version>
 </dependency>
 ```
 If we would use MSSQL or Oracle we would use differend dependency for example this:
@@ -37,12 +37,13 @@ If we would use MSSQL or Oracle we would use differend dependency for example th
 </dependency>
 ```
 ## Entity manager implementation
-Persistance is basically interface and we need some implementation. This example use Hibernate as it's engine.
+Persistance is basically interface for storing object in database and we need some implementation. 
+This example use Hibernate as it's engine.
 ```java
 <dependency>
-	<groupId>org.hibernate</groupId>
-	<artifactId>hibernate-entitymanager</artifactId>
-	<version>5.0.2.Final</version>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.3.6.Final</version>
 </dependency>
 ```
 Alternative is for example EcliseLink or some other library
