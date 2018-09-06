@@ -12,7 +12,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.examples.jasper.entity.Address;
-import org.examples.jasper.entity.Faktura;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -35,10 +34,39 @@ public class Main
     {
         System.out.println("--- Jasper report example ---");
         
-        JasperProcessor processor = new JasperProcessor();
-        processor.processFile();
+        String reportName = "exampleReport";
         
-        System.out.println("--- DONE ---");
+        JasperProcessor jasperProcessor = new JasperProcessor(reportName);
+        jasperProcessor.parseTemplate();
+        
+        DataBeanList DataBeanList = new DataBeanList();
+        ArrayList<DataBean> dataList = DataBeanList.getDataBeanList();
+        JRBeanCollectionDataSource beanColDataSource = new JRBeanCollectionDataSource(dataList);
 
+        Address dodavatel = new Address();
+        dodavatel.setCity("Mesto");
+        dodavatel.setFirstName("Jan");
+        dodavatel.setLastName("Novak");
+        
+        // Parametry
+        Faktura faktura = new Faktura();
+        faktura.setCelkovaCena("150Eur");
+        faktura.setDatumSplatnosti("15.2.2019");
+        faktura.setDatumVystaveni("15.9.2019");
+        faktura.setVs("00000001");
+        faktura.setDodavatelAdresa(dodavatel);
+        
+        Map<String, Object> parameters = new HashMap<String, Object>();
+        
+        
+        parameters.put("ReportTitle", "List of Contacts");
+        parameters.put("Author", "Prepared By Manisha");
+        parameters.put("Faktura", faktura);
+
+        jasperProcessor.insertParamsAndCompile(parameters, beanColDataSource);
+        jasperProcessor.exportResultToFile("src/main/resources/output/output.PDF");
+        
+        System.out.println("--- Done ---");
+        
     }
 }

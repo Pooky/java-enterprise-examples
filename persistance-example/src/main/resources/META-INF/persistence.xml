@@ -6,10 +6,10 @@
 	
 	<persistence-unit name="LOCAL_TEST" transaction-type="RESOURCE_LOCAL">
 		
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<non-jta-data-source/>
 
-	    <class>org.pooky.examples.java.persistance.User</class>
+	    <class>org.examples.java.persistance.User</class>
 		
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 	    <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>

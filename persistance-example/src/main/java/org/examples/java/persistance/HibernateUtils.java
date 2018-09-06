@@ -1,4 +1,4 @@
-package org.pooky.examples.java.persistance;
+package org.examples.java.persistance;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
