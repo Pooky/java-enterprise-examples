@@ -7,7 +7,7 @@ Availible examples:
  * Context Dependency Injection - [CDI example](./cdi-example)
  * Spring Dependency Injection - [Spring example](https://github.com/Pooky/dependency-injection-spring)
  * Database persistance layer - [Persistance example](./persistance-example)
- * RSA, Diffie Hellman Key Exchange - [Encription examples](./encryption-examples)
+ * RSA, Diffie Hellman Key Exchange - [Encryption examples](./encryption-examples)
  * Reports and PDF - [Jasper example](./jasper-example)
  * Jobs and Cron - [Quartz Scheduler example](./quartz-example) 
  * REST Web Services - [RestEasy example](./resteasy-example) 

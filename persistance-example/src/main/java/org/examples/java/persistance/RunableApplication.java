@@ -1,5 +1,7 @@
 package org.examples.java.persistance;
 
+import java.nio.channels.ShutdownChannelGroupException;
+
 import javax.inject.Inject;
 import org.examples.java.persistance.entity.User;
 import org.examples.java.persistance.enums.UserType;
@@ -37,6 +39,13 @@ public class RunableApplication {
 		service.getUsers().stream().forEach(e -> System.out.println(e));
 
 		System.out.println("--- All done! -----");
+		
+		// Shutdown connection
+		
+		HibernateUtils.getEntityManager().clear();
+		HibernateUtils.getEntityManager().close();
+		
+		
 				
 	}
 
