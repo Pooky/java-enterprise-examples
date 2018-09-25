@@ -4,6 +4,7 @@ Main aim of this repository is to keep simple java examples for differend enterp
 
 Availible examples:
 
+ * Testing with Mockito (Unit tests) - [Mockito example](https://github.com/Pooky/Mockito)
  * Context Dependency Injection - [CDI example](./cdi-example)
  * Spring Dependency Injection - [Spring example](https://github.com/Pooky/dependency-injection-spring)
  * Database persistance layer - [Persistance example](./persistance-example)
