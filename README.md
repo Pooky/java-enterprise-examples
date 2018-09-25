@@ -9,12 +9,12 @@ Availible examples:
  * Spring Dependency Injection - [Spring example](https://github.com/Pooky/dependency-injection-spring)
  * Database persistance layer - [Persistance example](./persistance-example)
  * RSA, Diffie Hellman Key Exchange - [Encryption examples](./encryption-examples)
- * Reports and PDF - [Jasper example](./jasper-example)
- * Jobs and Cron - [Quartz Scheduler example](./quartz-example) 
+ * Reports and PDF - [Jasper example](./jasper-example) // Not yet completed
+ * Jobs and Cron - [Quartz Scheduler example](./quartz-example) // Not yet completed
  * REST Web Services - [RestEasy example](./resteasy-example) 
  * Java pages - [Servlets example](./servlet-example)
- * Security of application - [Shiro example](./shiro-example)
- * Web application pure in Java - [Vaadin example](./vaadin-example)
+ * Security of application - [Shiro example](./shiro-example) // Not yet completed
+ * Web application pure in Java - [Vaadin example](./vaadin-example) // Not yet completed
 
 Each folder contain README.md where are instruction how to compile and run specific example.
 For building project you need to use Maven.
