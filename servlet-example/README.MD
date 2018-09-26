@@ -2,7 +2,7 @@ Servlet Example 1.0
 =========================
 In this example you can find basic Servlet configuration and usage.
 There is also JSP example, filtering requests, listener and showcase of configuration
-used by web.xml or by annotation, which allow to ommit most of xml functionality.
+used by web.xml or by annotation, which allow to commit most of xml functionality.
 
 How to install:
 ====================
@@ -27,7 +27,7 @@ Package: org.examples.servlets
  * LoggingFilter.java - filter which record every request made to the server
  * Dispatcher.java - Default controller, which will grab aby not mapped request
  * Listener.java - Startup and shutdown listener, which can be used to made some pre-start and post-start operation
- * MainServlet.java - Servlet mapped by web.xml (it's same as HomeController only differend approach)
+ * MainServlet.java - Servlet mapped by web.xml (it's same as HomeController only different approach)
 
 Folder: src/main/webapp
 

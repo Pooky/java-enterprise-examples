@@ -1,13 +1,13 @@
 # Java Enterprise Examples
 
-Main purpouse of this repository is to provide simple examples for various java, enterprise technologies and concepts. Some of this examples need still some polish but most of them should be working and good source for understanding how the technology works. 
+Main purpose of this repository is to provide simple examples for various java, enterprise technologies and concepts. Some of this examples need still some polish but most of them should be working and good source for understanding how the technology works. 
 
 Each folder contain README.md where are instruction how to compile and run specific example.
 For building project you need to use Maven.
 
-For more about java enterprise technlogy check [Wiki](https://github.com/Pooky/java-examples/wiki/)!
+For more about java enterprise technology check [Wiki](https://github.com/Pooky/java-examples/wiki/)!
 
-## Availible examples
+## Available examples
 
 ### Context and dependency
 

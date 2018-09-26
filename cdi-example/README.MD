@@ -1,6 +1,6 @@
 # Dependency Injection Example
 
-> The purpouse of this example is to show how you can use dependency injection design pattern.
+> The purpose of this example is to show how you can use dependency injection design pattern.
 
 Dependency injection or DI simply mean  providing dependencies (objects, references) to java objects externally. The object does not have to hold or create new objects (dependencies) by him self, instead he need to be provided with object references during construction or externally.
 
@@ -21,7 +21,7 @@ Now, let's see some examples. *All examples can be found in repository*
 
 In code bellow we have class which has constructor, single method ```run``` and private variable ```myObject```. During the construction the class will create new instance of the class MockObject and save it reference to variable ```myObject```. 
 
-MockObject is dependency for the class in this case. We can see that dependency initialization is hardcoded into the code. We can't provide the class with differend dependency for ```MockObject``` without changing the code bellow. 
+MockObject is dependency for the class in this case. We can see that dependency initialization is hardcoded into the code. We can't provide the class with different dependency for ```MockObject``` without changing the code bellow. 
 
 
 ```java
@@ -91,11 +91,11 @@ public class RunableApplication {
 
 }
 ```
-In this case we don't need any constructor. The intialization of the instance is fully automated by container. You can also specify which class you want to inject by annotation or other settings which will be passed to container - usually is used beans.xml file.
+In this case we don't need any constructor. The initialization of the instance is fully automated by container. You can also specify which class you want to inject by annotation or other settings which will be passed to container - usually is used beans.xml file.
 
 ## Downsides of dependency injection done by container.**
 
-When we talking about dependency injection delegated to container we should also talk about some disadvantages which this approach cover. At first it's overhead during configuration and startup. Container needs to know where are classes located and he need to decide what will be injected and where. That's pretty heavy for configuration and many of libraries use differend way how to configure their behavior, many times it very confusing to understand the rules exactly.
+When we talking about dependency injection delegated to container we should also talk about some disadvantages which this approach cover. At first it's overhead during configuration and startup. Container needs to know where are classes located and he need to decide what will be injected and where. That's pretty heavy for configuration and many of libraries use different way how to configure their behavior, many times it very confusing to understand the rules exactly.
 
 Secondly, when you use container to inject your classes all classes that you use need to be injectable. In other words you can not use injection of one class and another create manually, that will lead to null pointers and errors. All classes need to be managed by container.
 

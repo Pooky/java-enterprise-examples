@@ -1,8 +1,8 @@
 # Java Persistance Example
 
-> The purpouse of this example is to show you how to user persistance layer to save data to database.
+> The purpose of this example is to show you how to user persistance layer to save data to database.
 
-Persistance layer in Java is very popular. Java is object oriented and this method allow you to persist (save) data to db and again to retrive it back using objects and object related language - something like LINQ in .NET world. 
+Persistance layer in Java is very popular. Java is object oriented and this method allow you to persist (save) data to db and again to retrieve it back using objects and object related language - something like LINQ in .NET world. 
 
 To make connection from java to db you mainly need this three things:
 
@@ -20,7 +20,7 @@ This file is configuration file for db connection. All settings and database con
 
 ## Database driver
 
-In this example we use HSQLDB memory emmbed database and we need correct driver for that. We define it as maven dependency.
+In this example we use HSQLDB memory embed database and we need correct driver for that. We define it as maven dependency.
 ```java
 <dependency>
 	<groupId>org.hsqldb</groupId>
