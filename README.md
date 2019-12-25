@@ -7,6 +7,8 @@ For building project you need to use Maven.
 
 For more about java enterprise technology check [Wiki](https://github.com/Pooky/java-examples/wiki/)!
 
+Developer laws: https://github.com/dwmkerr/hacker-laws
+
 ## Available examples
 
 ### Context and dependency
