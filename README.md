@@ -1,13 +1,15 @@
 # Java Enterprise Examples
 
-Main purpose of this repository is to provide simple examples for various java, enterprise technologies and concepts. Some of this examples need still some polish but most of them should be working and good source for understanding how the technology works. 
+Main purpose of this repository is to provide simple examples for various java enterprise (Java EE) technologies. 
 
 Each folder contain README.md where are instruction how to compile and run specific example.
 For building project you need to use Maven.
 
-For more about java enterprise technology check [Wiki](https://github.com/Pooky/java-examples/wiki/)!
+For more information about java enterprise technology check [Wiki](https://github.com/Pooky/java-examples/wiki/)!
 
-Developer laws: https://github.com/dwmkerr/hacker-laws
+See also developer laws: https://github.com/dwmkerr/hacker-laws
+
+And have fun! =)
 
 ## Available examples
 
@@ -48,6 +50,7 @@ Injecting objects or managing dependency by container
  * Jobs and Cron - [Quartz Scheduler example](./quartz-example) // Not yet completed
 
 ### Reports and export format
+
  * Reports and PDF - [Jasper example](./jasper-example) // Not yet completed
 
 
