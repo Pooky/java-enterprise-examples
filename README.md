@@ -1,9 +1,12 @@
 # Java Enterprise Examples
 
-Main purpose of this repository is to provide simple examples for various java enterprise (Java EE) technologies. 
+Main purpouse of this repository is to provide simple examples for various java enterprise (Java EE) technologies. 
 
-Each folder contain README.md where are instruction how to compile and run specific example.
-For building project you need to use Maven.
+In folder below you will find materials and documentation about specific usage.
+There is Spring Boot, Dependency Injection, Mockito, Testing, Web Services, Schedulers, Security, Database and Encription.
+
+Every example contain README.md where you can find instruction how to compile and run project in your local environment.
+For building project you need to use maven - most of time. Also there will be included interesting link to documentation and resources, which can help you understand the subject.
 
 For more information about java enterprise technology check [Wiki](https://github.com/Pooky/java-examples/wiki/)!
 
